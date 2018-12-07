@@ -29,3 +29,6 @@ GRANT SELECT ON sfg_prod.* to 'sfg_prod_user'@'%';
 GRANT INSERT ON sfg_prod.* to 'sfg_prod_user'@'%';
 GRANT DELETE ON sfg_prod.* to 'sfg_prod_user'@'%';
 GRANT UPDATE ON sfg_prod.* to 'sfg_prod_user'@'%';
+
+ALTER USER 'sfg_dev_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'guru';
+ALTER USER 'sfg_dev_user'@'%' IDENTIFIED WITH mysql_native_password BY 'guru';
